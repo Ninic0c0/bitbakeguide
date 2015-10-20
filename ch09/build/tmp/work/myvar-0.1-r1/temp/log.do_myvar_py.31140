@@ -1,0 +1,23 @@
+DEBUG: Executing python function do_myvar_py
+ERROR: Error executing a python function in /home/slk141/boxes/BitBakeGuide/ch09/build/../meta-two/recipes-vars/myvar/myvar_0.1.bb:
+
+The stack trace of python calls that resulted in this exception/failure was:
+File: 'do_myvar_py', lineno: 6, function: <module>
+     0002:def do_myvar_py(d):
+     0003:  print "myvar_py:" + d.getVar('MYVAR', True)
+     0004:
+     0005:
+ *** 0006:do_myvar_py(d)
+     0007:
+File: 'do_myvar_py', lineno: 3, function: do_myvar_py
+     0001:
+     0002:def do_myvar_py(d):
+ *** 0003:  print "myvar_py:" + d.getVar('MYVAR', True)
+     0004:
+     0005:
+     0006:do_myvar_py(d)
+     0007:
+Exception: TypeError: cannot concatenate 'str' and 'NoneType' objects
+
+DEBUG: Python function do_myvar_py finished
+ERROR: Function failed: do_myvar_py
