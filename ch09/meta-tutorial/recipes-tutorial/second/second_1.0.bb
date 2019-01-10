@@ -1,10 +1,10 @@
-DESCRIPTION = "I am the second recepi"
+DESCRIPTION = "I am the second recipe"
 PR = "r1"
 
 inherit mybuild
 
 def pyfunc(o):
-    print dir (o)
+    print (dir (o))
 
   
 python do_mypatch () {
