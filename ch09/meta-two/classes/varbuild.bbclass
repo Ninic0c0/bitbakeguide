@@ -1,5 +1,5 @@
 varbuild_do_build () {
-  echo "build with args: ${BUILDARGS}"
+    echo "build with args: ${BUILDARGS}"
 }
 
 addtask build

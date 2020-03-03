@@ -10,8 +10,8 @@ bbplay_root_dir=$(dirname $(readlink -f "$BASH_SOURCE"))
 bitbake_root_dir=$bbplay_root_dir/bitbake
 
 if [ -d $bitbake_root_dir ] ; then
-	export PATH=$bitbake_root_dir/bin:$PATH
-	export PYTHONPATH=$bitbake_root_dir/lib:$PYHTONPATH
+    export PATH=$bitbake_root_dir/bin:$PATH
+    export PYTHONPATH=$bitbake_root_dir/lib:$PYHTONPATH
 else
-	echo "ERROR: $bitbake_root_dir does not exist"
+    echo "ERROR: $bitbake_root_dir does not exist"
 fi
